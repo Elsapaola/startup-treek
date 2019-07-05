@@ -1,0 +1,17 @@
+.container-fluid {
+    padding: 0;
+    margin: 0;
+  }
+  .banner {
+    background-image: url("../../assets/img/image-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10%;
+    height: 100%;
+  }
+  @media screen and  (min-width: 320px) and (max-width: 800px) {
+    .banner {
+      padding: 37%;
+      background-size: cover;
+    }
+  }

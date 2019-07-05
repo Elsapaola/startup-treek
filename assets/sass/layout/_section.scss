@@ -1,0 +1,88 @@
+section {
+    padding-bottom: 3rem;
+}
+.col-sm {
+    padding-bottom: 1rem;
+}
+
+.news {
+
+    &__title {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        @media screen and  (min-width: 320px) and (max-width: 500px) {
+            text-align: center;
+          }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__titulo{
+        padding: 10px 0px;
+    }
+}
+
+
+main {
+    margin-top: 1rem;
+}
+
+.profile {
+
+    &__imagen {
+        height: 100px;
+        border-radius: 100px;
+        width: 100px;
+        padding: 1%;
+    }
+
+    &__title {
+        margin-top: 2rem;
+        @media screen and  (min-width: 320px) and (max-width: 500px) {
+            margin-top: 1rem;
+            margin-left: 5rem;
+          }
+    }
+
+    &__parrafo {
+        margin-top: 1rem;
+        @media screen and  (min-width: 320px) and (max-width: 500px) {
+            margin-top: 1rem;
+            margin-left: 5rem;
+        }
+    }
+}
+
+.btn {
+    float: right;
+    font-family: $font-stack;
+    font-weight: $light;
+
+    &.profile__message {
+        background-color: $celeste;
+        color: white;
+        border-radius: 0px;
+        margin-top: 2rem;
+    }
+
+    &.profile__follow {
+        background-color: $red;
+        color: white;
+        border-radius: 0px;
+        margin-top: 2rem;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+@media (max-width: 300px) {
+    .news__title {
+        text-align: center;
+    }
+}

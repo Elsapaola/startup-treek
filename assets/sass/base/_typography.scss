@@ -1,0 +1,54 @@
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
+$font-stack:'Lato', sans-serif;
+
+$xxx-large: 3.9rem;
+$xx-large: 2.3rem;
+$x-large: 1.4rem;
+$large: 1.2rem;
+$medium: 1rem;
+
+h1 {
+    font-family: $font-stack;
+    font-weight: $black; 
+    font-size: $xxx-large;
+    color: $black;
+}
+
+h2 {
+    font-family: $font-stack;
+    font-weight: $black; 
+    font-size: $xx-large;
+    color: $black;
+}
+
+h3 {
+    font-size: $x-large; 
+    font-family: $font-stack;
+    font-weight: $regular; 
+}
+
+h4 {
+    color: $black;
+    font-weight: $bold; 
+    font-family: $font-stack;
+    font-size: $large; 
+}
+
+
+h5 {
+    color: $black;
+    font-weight: $bold; 
+    font-family: $font-stack;
+    font-size: $medium; 
+}
+
+p {
+    color: $black;
+    font-weight: $light; 
+    font-family: $font-stack;
+    font-size: $medium; 
+}

@@ -1,0 +1,22 @@
+.logo {
+    width: 150px
+}
+
+.fa, .fas {
+    padding: 17%;
+}
+
+.toogle {
+    color: black;
+    padding: 1%;
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+
+@media (max-width: 300px) {
+    .navbar-toggler {
+        padding:1.25rem 0.75rem;
+    }
+}
