@@ -1,22 +1,62 @@
-.logo {
-    width: 150px
-}
+.main-menu {
 
-.fa, .fas {
-    padding: 17%;
-}
-
-.toogle {
-    color: black;
-    padding: 1%;
-}
-
-.bg-light {
-    background-color: #ffffff !important;
-}
-
-@media (max-width: 300px) {
-    .navbar-toggler {
-        padding:1.25rem 0.75rem;
+    &__left {
+      svg {
+        height: $x-large;
+      }
     }
-}
+
+    &__right {
+      display: flex;
+      justify-content: flex-end;
+
+      i {
+        font-size: $x-large;
+      }
+    }
+
+    @media only screen and (min-width: $viewport-medium) {
+      &__left {
+        a {
+          margin-right: 15px;
+          position: relative;
+          top: -10px;
+        }
+      }
+    }
+
+  }
+
+  .main-menu {
+
+    &__left {
+      a {
+        display: none;
+      }
+    }
+
+    &__right {
+      button {
+        display: none;
+      }
+    }
+
+    @media only screen and (min-width: $viewport-medium) {
+      &__left {
+        a {
+          display: initial;
+        }
+      }
+
+      &__right {
+        button {
+          display: initial;
+        }
+
+        i {
+          display: none;
+        }
+      }
+    }
+
+  }

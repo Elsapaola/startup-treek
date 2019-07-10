@@ -1,54 +1,69 @@
-$light: 300;
-$regular: 400;
-$bold: 700;
-$black: 900;
+// Tipografías
+$font-stack: 'Raleway',sans-serif;
+$open-sans: 'Open Sans',sans-serif;
 
-$font-stack:'Lato', sans-serif;
+// Pesos tipográficos
+$xxxxx-large: 50px;
+$xxxx-large: 45px;
+$xxx-large: 40px;
+$xx-large: 35px;
+$x-large: 30px;
+$large: 20px;
+$medium: 16px;
+$small: 14px;
+$x-small: 12px;
 
-$xxx-large: 3.9rem;
-$xx-large: 2.3rem;
-$x-large: 1.4rem;
-$large: 1.2rem;
-$medium: 1rem;
+body {
+  color: $raising-black;
+  font-family: $open-sans;
+  font-size: $small;
+  line-height: 1.8rem;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: $font-stack;
+  font-weight: bold;
+  line-height: 4rem;
+}
 
 h1 {
-    font-family: $font-stack;
-    font-weight: $black; 
-    font-size: $xxx-large;
-    color: $black;
+  font-size: $xxx-large;
 }
 
 h2 {
-    font-family: $font-stack;
-    font-weight: $black; 
-    font-size: $xx-large;
-    color: $black;
+  font-size: $x-large;
 }
 
 h3 {
-    font-size: $x-large; 
-    font-family: $font-stack;
-    font-weight: $regular; 
+  font-size: $large;
 }
 
 h4 {
-    color: $black;
-    font-weight: $bold; 
-    font-family: $font-stack;
-    font-size: $large; 
+  font-size: $medium;
+
+  small {
+    font-size: $small;
+  }
 }
 
+@media only screen and (min-width: $viewport-medium) {
+  h1 {
+    font-size: $xxx-large;
+  }
 
-h5 {
-    color: $black;
-    font-weight: $bold; 
-    font-family: $font-stack;
-    font-size: $medium; 
-}
+  h2 {
+    font-size: $xx-large;
+  }
 
-p {
-    color: $black;
-    font-weight: $light; 
-    font-family: $font-stack;
-    font-size: $medium; 
+  h3 {
+    font-size: $x-large;
+  }
+
+  h4 {
+    font-size: $large;
+
+    small {
+      font-size: $small;
+    }
+  }
 }

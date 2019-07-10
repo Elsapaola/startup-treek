@@ -1,0 +1,43 @@
+.offer-background {
+    background-image: url("../img/bg-price.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    top: 30rem;
+}
+
+.offer-background {
+    &__text {
+        padding-top: 13vw !important;
+        color: white;
+    }
+
+    &__card {
+        background-color: white;
+        padding: 2rem !important;
+        height: 24vw;
+    }
+
+    &__titulo {
+        color: $raising-black;
+        font-weight: lighter;
+        margin-bottom: -21px;
+    }
+
+    &__tituloprice {
+        color: $raising-black;
+        font-weight: bold;
+    }
+    &__lista {
+        padding: 0rem 2rem;
+        height: 8vw;
+    }
+}
+
+hr {
+    border: 0.5px solid $gray!important;
+}
+
+li {
+    list-style-type: disc;
+}
