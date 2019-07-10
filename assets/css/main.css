@@ -404,15 +404,26 @@ h4 small {
 .main-menu__right {
   display: flex;
   justify-content: flex-end;
+  align-items: end;
+  display: flex;
+  justify-content: end;
+  padding-left: 35vw !important;
 }
 .main-menu__right i {
   font-size: 30px;
+}
+.main-menu__left1 {
+  align-items: end;
+  display: flex;
+  justify-content: end;
+  padding-left: 10vw !important;
 }
 @media only screen and (min-width: 768px) {
   .main-menu__left a {
     margin-right: 15px;
     position: relative;
     top: -10px;
+    color: black;
   }
 }
 
@@ -452,12 +463,21 @@ a {
   text-align: left;
   max-width: 28vw;
 }
+@media screen and (min-width: 350px) and (max-width: 500px) {
+  .caracteristics__parrafo {
+    text-align: left;
+    max-width: 67vw !important;
+  }
+}
 .caracteristics__titulo {
   text-align: center;
 }
 .caracteristics__image {
   display: grid;
   align-self: end;
+  position: relative;
+  animation: mymove 2.3s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .banner article {
@@ -478,12 +498,24 @@ div.row {
     width: 32vw;
   }
 }
+@keyframes mymove {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 2;
+  }
+  100% {
+    opacity: 5;
+  }
+}
 .offer-background {
   background-image: url("../img/bg-price.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   top: 30rem;
+  padding-bottom: 2vw !important;
 }
 
 .offer-background__text {
@@ -493,7 +525,7 @@ div.row {
 .offer-background__card {
   background-color: white;
   padding: 2rem !important;
-  height: 24vw;
+  height: auto;
 }
 .offer-background__titulo {
   color: #221d23;
@@ -506,7 +538,7 @@ div.row {
 }
 .offer-background__lista {
   padding: 0rem 2rem;
-  height: 8vw;
+  height: 150px;
 }
 
 hr {
@@ -519,12 +551,14 @@ li {
 
 .btn {
   border: none;
-  padding: 0.7rem;
+  padding: 1rem;
+  font-size: 12px;
 }
 .btn--primary {
   background-color: #2AB7CA;
   color: #fff;
   width: 100%;
+  margin-top: 10px;
 }
 .btn--primary:hover {
   background-color: #77D1DD;
@@ -535,6 +569,23 @@ li {
 .btn--secondary {
   background-color: #fff;
   color: #221d23;
+}
+.btn--iniciar {
+  border: none;
+  padding: 5px 10px;
+  color: #221d23;
+}
+.btn--registrate {
+  border: none;
+  padding: 5px 10px;
+  background-color: #2AB7CA;
+  color: #fff;
+}
+.btn--registrate:hover {
+  background-color: #77D1DD;
+}
+.btn--registrate:active {
+  background-color: #AEACAF;
 }
 
 /*# sourceMappingURL=main.css.map */

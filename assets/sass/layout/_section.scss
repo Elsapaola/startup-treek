@@ -3,6 +3,10 @@
     &__parrafo {
         text-align: left;
         max-width: 28vw;
+        @media screen and  (min-width: 350px) and (max-width: 500px) {
+            text-align: left;
+            max-width: 67vw!important;
+          }
     }
 
     &__titulo {
@@ -12,6 +16,9 @@
     &__image {
         display: grid;
         align-self: end;
+        position: relative;
+		animation: mymove 2.3s infinite;
+		animation-timing-function: ease-in-out;
     }
 }
 
@@ -33,3 +40,17 @@ div.row{
         width: 32vw;
     }
 }
+
+@keyframes mymove {
+    0% {
+        opacity: 0.0;
+      }
+
+    50% {
+        opacity: 2;
+    }
+    
+      100% {
+      opacity: 5;
+    }
+  }

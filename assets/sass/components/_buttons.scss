@@ -2,11 +2,14 @@
 
 .btn {
     border: none;
-    padding: 5px 10px;
+    padding: 1rem;
+    font-size: $x-small;
 
     &--primary {
       background-color: $ball-blue;
       color: $white;
+      width: 100%;
+      margin-top: 10px;
 
       &:hover {
         background-color: $middle-blue;
@@ -22,4 +25,25 @@
       color: $raising-black;
     }
 
-  }
+    &--iniciar {
+      border: none;
+      padding: 5px 10px;
+      color: $raising-black;
+    }
+
+    &--registrate {
+      border: none;
+      padding: 5px 10px;
+      background-color: $ball-blue;
+      color: $white;
+
+      &:hover {
+        background-color: $middle-blue;
+      }
+
+      &:active {
+        background-color: $silver-chalice;
+      }
+    }
+
+}
